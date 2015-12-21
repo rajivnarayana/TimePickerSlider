@@ -1,0 +1,14 @@
+PODS:
+  - TimePickerSlider (0.1.0)
+
+DEPENDENCIES:
+  - TimePickerSlider (from `../`)
+
+EXTERNAL SOURCES:
+  TimePickerSlider:
+    :path: ../
+
+SPEC CHECKSUMS:
+  TimePickerSlider: 3ee284b1a40d6da394051c8bafa478c043396230
+
+COCOAPODS: 0.39.0
