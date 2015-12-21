@@ -1,0 +1,15 @@
+//
+//  HZAppDelegate.h
+//  TimePickerSlider
+//
+//  Created by Rajiv Narayana on 12/21/2015.
+//  Copyright (c) 2015 Rajiv Narayana. All rights reserved.
+//
+
+@import UIKit;
+
+@interface HZAppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
+@end

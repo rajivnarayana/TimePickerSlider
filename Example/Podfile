@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'TimePickerSlider_Example', :exclusive => true do
+  pod "TimePickerSlider", :path => "../"
+end
+
+target 'TimePickerSlider_Tests', :exclusive => true do
+  pod "TimePickerSlider", :path => "../"
+
+  
+end
