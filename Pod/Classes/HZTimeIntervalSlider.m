@@ -43,8 +43,6 @@
         self.textAttributes = @{NSForegroundColorAttributeName : self.strokeColor, NSFontAttributeName: [UIFont boldSystemFontOfSize:12.f] };
         self.cornerRadius = 5.f;
         self.continuous = YES;
-        [self performSelector:@selector(updateThumbImage) withObject:nil afterDelay:0];
-        [self addTarget:self action:@selector(updateThumbImage) forControlEvents:UIControlEventValueChanged];
     }
     return self;
 }
@@ -135,5 +133,10 @@
         return [self.delegate textForIntervalValue:value forSlider:self];
     }
     return [self.dateFormatter stringFromDate:[NSDate dateWithTimeIntervalSince1970:floor(value) * 30 * 60.f]];
+}
+
+-(void)setValue:(float)value animated:(BOOL)animated {
+    [super setValue:value animated:animated];
+    [self performSelector:@selector(updateThumbImage) withObject:nil afterDelay:0];
 }
 @end
